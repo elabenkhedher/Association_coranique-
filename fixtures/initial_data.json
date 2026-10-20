@@ -1,0 +1,276 @@
+[
+  {
+    "model": "centres.centre",
+    "pk": 1,
+    "fields": {
+      "nom": "Centre Omar Ibn Al-Khattab - Principal",
+      "adresse": "Rue de la Mosquée, Dar Chaabane El Fehri",
+      "ville": "Dar Chaabane El Fehri",
+      "telephone": "+216 72 000 001",
+      "date_creation": "2020-01-01",
+      "responsable": null
+    }
+  },
+  {
+    "model": "centres.centre",
+    "pk": 2,
+    "fields": {
+      "nom": "Centre Omar Ibn Al-Khattab - Annexe",
+      "adresse": "Avenue Habib Bourguiba, Dar Chaabane El Fehri",
+      "ville": "Dar Chaabane El Fehri",
+      "telephone": "+216 72 000 002",
+      "date_creation": "2022-06-01",
+      "responsable": null
+    }
+  },
+  {
+    "model": "users.customuser",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$test$hashedpasswordhere",
+      "last_login": null,
+      "is_superuser": true,
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2024-01-01T00:00:00Z",
+      "email": "admin@association.tn",
+      "nom": "Administrateur",
+      "prenom": "Super",
+      "role": "admin",
+      "telephone": "+216 72 000 000",
+      "date_naissance": null,
+      "centre": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.customuser",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$test$hashedpasswordhere",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-01-15T00:00:00Z",
+      "email": "enseignant1@association.tn",
+      "nom": "Ben Ali",
+      "prenom": "Mohamed",
+      "role": "enseignant",
+      "telephone": "+216 55 000 001",
+      "date_naissance": "1985-03-15",
+      "centre": 1,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.customuser",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$test$hashedpasswordhere",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-01-15T00:00:00Z",
+      "email": "enseignant2@association.tn",
+      "nom": "Gharbi",
+      "prenom": "Fatma",
+      "role": "enseignant",
+      "telephone": "+216 55 000 002",
+      "date_naissance": "1990-07-22",
+      "centre": 2,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.customuser",
+    "pk": 4,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$test$hashedpasswordhere",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-02-01T00:00:00Z",
+      "email": "apprenant1@association.tn",
+      "nom": "Trabelsi",
+      "prenom": "Ahmed",
+      "role": "apprenant",
+      "telephone": "+216 55 100 001",
+      "date_naissance": "2008-05-10",
+      "centre": 1,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.customuser",
+    "pk": 5,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$test$hashedpasswordhere",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-02-01T00:00:00Z",
+      "email": "apprenant2@association.tn",
+      "nom": "Keskes",
+      "prenom": "Mariam",
+      "role": "apprenant",
+      "telephone": "+216 55 100 002",
+      "date_naissance": "2010-09-25",
+      "centre": 1,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.customuser",
+    "pk": 6,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$test$hashedpasswordhere",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-02-01T00:00:00Z",
+      "email": "apprenant3@association.tn",
+      "nom": "Mansouri",
+      "prenom": "Youssef",
+      "role": "apprenant",
+      "telephone": "+216 55 100 003",
+      "date_naissance": "2009-12-03",
+      "centre": 2,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "programmes.programme",
+    "pk": 1,
+    "fields": {
+      "nom": "Mémorisation - Juz 1",
+      "type_programme": "collectif",
+      "niveau": 1,
+      "centre": 1,
+      "date_debut": "2024-09-01",
+      "date_fin": "2025-06-30",
+      "description": "Programme de mémorisation du premier juz pour les débutants."
+    }
+  },
+  {
+    "model": "programmes.programme",
+    "pk": 2,
+    "fields": {
+      "nom": "Révision - Juz 2",
+      "type_programme": "individuel",
+      "niveau": 2,
+      "centre": 1,
+      "date_debut": "2024-09-01",
+      "date_fin": "2025-06-30",
+      "description": "Révision individuelle du deuxième juz."
+    }
+  },
+  {
+    "model": "planning.creneau",
+    "pk": 1,
+    "fields": {
+      "titre": "Cours Hifdh - Groupe A",
+      "centre": 1,
+      "enseignant": 2,
+      "date": "2024-10-07",
+      "heure_debut": "09:00:00",
+      "heure_fin": "10:30:00",
+      "programme": 1,
+      "est_annule": false
+    }
+  },
+  {
+    "model": "planning.creneau",
+    "pk": 2,
+    "fields": {
+      "titre": "Cours Murajaa - Groupe B",
+      "centre": 1,
+      "enseignant": 2,
+      "date": "2024-10-07",
+      "heure_debut": "11:00:00",
+      "heure_fin": "12:00:00",
+      "programme": 2,
+      "est_annule": false
+    }
+  },
+  {
+    "model": "presences.presence",
+    "pk": 1,
+    "fields": {
+      "creneau": 1,
+      "apprenant": 4,
+      "statut": "present",
+      "enregistre_par": 2,
+      "date_enregistrement": "2024-10-07T09:15:00Z"
+    }
+  },
+  {
+    "model": "presences.presence",
+    "pk": 2,
+    "fields": {
+      "creneau": 1,
+      "apprenant": 5,
+      "statut": "absent",
+      "enregistre_par": 2,
+      "date_enregistrement": "2024-10-07T09:15:00Z"
+    }
+  },
+  {
+    "model": "lectures.seancelecture",
+    "pk": 1,
+    "fields": {
+      "enseignant": 2,
+      "apprenant": 4,
+      "date_seance": "2024-10-07",
+      "sourate": "Al-Fatiha",
+      "verset_debut": 1,
+      "verset_fin": 7,
+      "type_lecture": "hifdh",
+      "evaluation": 4,
+      "commentaire": "Très bonne mémorisation, pronunciation correcte.",
+      "duree_minutes": 30
+    }
+  },
+  {
+    "model": "lectures.seancelecture",
+    "pk": 2,
+    "fields": {
+      "enseignant": 2,
+      "apprenant": 4,
+      "date_seance": "2024-10-09",
+      "sourate": "Al-Baqara",
+      "verset_debut": 1,
+      "verset_fin": 20,
+      "type_lecture": "tilawa",
+      "evaluation": 3,
+      "commentaire": "Bonne récitation, quelques erreurs de tajwid.",
+      "duree_minutes": 45
+    }
+  },
+  {
+    "model": "lectures.seancelecture",
+    "pk": 3,
+    "fields": {
+      "enseignant": 2,
+      "apprenant": 5,
+      "date_seance": "2024-10-07",
+      "sourate": "Al-Fatiha",
+      "verset_debut": 1,
+      "verset_fin": 7,
+      "type_lecture": "murajaa",
+      "evaluation": 5,
+      "commentaire": "Excellent ! Parfaite maîtrise.",
+      "duree_minutes": 20
+    }
+  }
+]
